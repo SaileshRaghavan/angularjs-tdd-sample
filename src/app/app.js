@@ -2,7 +2,8 @@ angular.module( 'sampleApp', [
   'templates-app',
   'templates-common',
   'ui.state',
-  'ui.route'
+  'ui.route',
+  'sampleApp.followers'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
@@ -15,7 +16,8 @@ angular.module( 'sampleApp', [
     template: "<h1>WRONG TURN!</h1>",
     data: {pageTitle: '404'}
   });
-})
+  })
+
 
 .run( function run () {
 })
