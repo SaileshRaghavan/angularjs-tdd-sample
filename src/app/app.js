@@ -1,14 +1,20 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'sampleApp', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
   'ui.state',
   'ui.route'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/home' );
+  $urlRouterProvider.otherwise( '/notfound' );
+})
+
+.config(function($stateProvider){
+  $stateProvider.state('notfound', {
+    url: '/notfound',
+    template: "<h1>WRONG TURN!</h1>",
+    data: {pageTitle: '404'}
+  });
 })
 
 .run( function run () {
@@ -17,7 +23,7 @@ angular.module( 'ngBoilerplate', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | sampleApp' ;
     }
   });
 })
