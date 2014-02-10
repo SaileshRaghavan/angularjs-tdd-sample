@@ -1,0 +1,27 @@
+{
+  "name": "angular-tdd-sample",
+  "version": "0.9",
+  "devDependencies": {
+    "angular": "~1.0.7",
+    "angular-mocks": "~1.0.7",
+    "bootstrap": "~2.3.2",
+    "angular-bootstrap": "~0.3.0",
+    "angular-ui-router": "~0.0.1",
+    "angular-ui-utils": "~0.0.3"
+  },
+  "authors": [
+    "Sreenath N <tacticiankerala@gmail.com>"
+  ],
+  "description": "Sample angularjs application for demonstrating tdd",
+  "license": "MIT",
+  "homepage": "http://multunus.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ]
+}
