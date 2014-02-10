@@ -8,17 +8,5 @@ get '/' do
 end
 
 get '/:handle/followers' do
-	json :data => "
-    {
-        \"followers\": [
-            {
-                \"id\": 0,
-                \"name\": \"twitter\"
-            },
-            {
-                \"id\": 1,
-                \"name\": \"github\"
-            }
-        ]
-    }"
+	json :followers => ["firefox", "chrome", "ie", "safari"]
 end

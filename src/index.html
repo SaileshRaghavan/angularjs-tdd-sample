@@ -32,6 +32,35 @@
   </head>
   <body>
    
+    <div class="container">
+     <div class="masthead">
+       <h3 class="muted">
+        <a href="http://multunus.com">
+          <img src="assets/images/header-logo.png" alt="Multunus" />
+        </a>
+      </h3>
+       <div class="navbar">
+         <div class="navbar-inner">
+           <div class="container">
+             <ul class="nav">
+               <li ui-route="/home" ng-class="{active:$uiRoute}">
+                 <a href="#/home">
+                   <i class="icon-home"></i>
+                   Home
+                 </a>
+               </li>
+               <li>
+                 <a href="https://github.com/multunus/angularjs-tdd-sample">
+                   <i class="icon-github-alt"></i>
+                   Github
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
 
     <div class="container" ui-view></div>
 
@@ -39,7 +68,7 @@
       <div class="container">
         <div>
           <p class="logo">
-            <img src="assets/images/header-logo.png" alt="Multunus" />
+            
           </p>
         </div>
       </div>
